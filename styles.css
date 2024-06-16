@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    object-fit: contain;
+}
+
+@font-face {
+    font-family: 'poppinsextrabold';
+    src: url('./fonts/poppins-extrabold-webfont.woff2') format('woff2'),
+         url('./fonts/poppins-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('./fonts/oppins-semibold-webfont.woff2') format('woff2'),
+         url('./fonts/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.banner {
+    position: relative;
+    max-width: 320px;
+    min-height: 427px;
+    background-color: #FFEEC1;
+    margin: auto;
+    text-align: center;
+    padding: 54px 20px;
+    overflow: hidden;
+}
+.banner__title {
+    position: relative;
+    font-family: 'poppinssemibold', sans-serif;
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 6px;
+    z-index: 20;
+}
+.banner__subtitle {
+    position: relative;
+    font-family: 'poppinsextrabold', sans-serif;
+    font-size: 28px;
+    line-height: 100%;
+    transform: translateX(-300px);
+    z-index: 20;
+}
+.banner__images {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner__block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.banner__block img {
+    position: absolute;
+}
+.banner__block img#board {
+    bottom: 78px;
+    left: -95px;
+    z-index: 8;
+}
+.banner__block img#shapes {
+    bottom: -117px;
+    left: -47px;
+    z-index: 7;
+}
+.banner__block img#element {
+    bottom: 78px;
+    right: -70px;
+    z-index: 10;
+}
+.banner__block img#sationery {
+    bottom: -9px;
+    right: -67px;
+    z-index: 9;
+}
